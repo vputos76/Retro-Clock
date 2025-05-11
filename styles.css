@@ -1,0 +1,63 @@
+:root{
+    --background: #c8be9d;
+    --font-colour: #443302;
+    --font-colour2: #241c02;
+}
+
+/* Set body background image */
+body{
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+h1{
+    font-family: "Ewert";
+    text-align: center;
+    font-size: 50pt;
+    color: var(--font-colour);
+}
+
+#timecard{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.card{
+    background-color: #faf7ee;
+    border: 3px solid var(--font-colour2);
+    border-radius: 8px;
+    color: var(--font-colour2);
+    height: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.colon{
+    width: 70px;
+    font-size: 120pt;
+    line-height: 110px;
+    font-size: 120pt;
+}
+
+.number{
+    font-size: 150pt;
+    line-height: 300px;
+    width: 150px;
+}
+
+@keyframes flipCard{
+    0% {transform: rotateX(0deg);}
+    100% {transform: rotateX(360deg);}
+}
+
+.flipCard{
+    animation: flipCard 0.6s ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+
+
