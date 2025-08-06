@@ -17,10 +17,11 @@ function changeClock(){
         let element = document.getElementById(key)
         // If the value is different flip the card while it changes numbers
         if (element.innerHTML != startTime[val]) {
-            element.innerHTML = startTime[val]
             element.classList.remove("flipCard")        // Remove class for animation
             void element.offsetWidth;                   // Force reflow
-            element.classList.add("flipCard")           // Add class for animation to trigger flipping
+            element.classList.add("flipCard")
+            // Add class for animation to trigger flipping
+            element.innerHTML = startTime[val]
         }        
     })
 }
